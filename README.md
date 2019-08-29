@@ -9,15 +9,18 @@ The tools are implemented as Python scripts that be used from the command line i
 
 Scientific models in Geosciences use spatial datasets such as Shapefiles and Digital Elevation Models DEMs as inputs; however, most of these datasets need to be prepared before they can be feed into the models. Therefore, tools to perform Extract-Transform-Load (ETL) operations over Geospatial data are fundamental for the completion of most experiments. Figure 1 shows the common usage of models in Geosciences.
 
-Insert Fig. 1
+![Figure 1](/figures/geosciences-models-usage.png)
+Figure 1. Common usage of models in Geosciences.
 
-As an example, we use some of the ETL tools in this repository to prepare a DEM for further analysis in hydrological models. The data preparation processing includes merging two raster tiles, reprojecting the result to a local reference system and then clipping it to a specific area of interest represented by a shapefile. These tools are combined to form a complete workflow in the WINGS system as shown in Figure 2.
+As an example, we use some of the ETL tools in this repository to prepare a DEM for further analysis in hydrological models. The data preparation processing includes merging two raster tiles, reprojecting the result to a local reference system and then clipping it to a specific area of interest represented by a shapefile. These tools are combined to form a complete workflow in the WINGS system as shown in Figure 2. Light blue boxes at the top represent raw datasets, green boxes are parameters such as the coordinate reference system to use, yellow boxes are processing components and dark blue boxes are output datasets.
 
-Insert Fig. 2
+![Figure 2](/figures/etl-workflow.png)
+Figure 2. Workflow for DEM preparation in WINGS.
 
-Figure 3 illustrates the processing steps for two tiles of a DEM in the region of Aweil Centre in South Sudan.
+Figure 3 illustrates the merging and clipping of two DEM tiles in the region of Aweil Centre in South Sudan.
 
-Insert Fig. 3
+![Figure 3](/figures/dem-before-after.png)
+Figure 3. DEM tiles before and after the preparation workflow.
 
 The resulting DEM is ready for use in multiple Geosciences models.
 

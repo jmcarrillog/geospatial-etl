@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 2 1 "$@"
+
+set -x
+python $BASEDIR/Reproject_GeoTIFF.py $INPUTS1 $PARAMS1 $PARAMS2 $OUTPUTS1
+
+checkExitCode
+

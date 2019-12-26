@@ -1,4 +1,4 @@
-# Extract Transform Load tools for Spatial data in WINGS
+# Extract Transform Load (ETL) Python tools for Geospatial data
 
 This repository includes multiple tools to perform Extract-Transform-Load (ETL) operations on Geospatial data, implemented as components for the WINGS semantic workflow system. WINGS is a system that helps scientists design and run experiments represented as workflows, for more information visit the [WINGS](www.wings-workflows.org) website.
 
